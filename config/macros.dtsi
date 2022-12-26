@@ -34,3 +34,45 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp P>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
+window_left: window_left {
+    label = "window_left";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    tap-ms = <2>;
+    bindings
+        = <&macro_press &kp LCTRL>
+        , <&macro_press &kp LALT>
+        , <&macro_tap &kp LEFT>
+        , <&macro_release &kp LCTRL>
+        , <&macro_release &kp LALT>
+        ;
+};
+window_right: window_right {
+    label = "window_right";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    tap-ms = <2>;
+    bindings
+        = <&macro_press &kp LCTRL>
+        , <&macro_press &kp LALT>
+        , <&macro_tap &kp RIGHT>
+        , <&macro_release &kp LCTRL>
+        , <&macro_release &kp LALT>
+        ;
+};
+window_max: window_max {
+    label = "window_max";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    tap-ms = <2>;
+    bindings
+        = <&macro_press &kp LCTRL>
+        , <&macro_press &kp LALT>
+        , <&macro_tap &kp ENTER>
+        , <&macro_release &kp LCTRL>
+        , <&macro_release &kp LALT>
+        ;
+};
