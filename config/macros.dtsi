@@ -34,8 +34,8 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp P>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
-window_left: window_left {
-    label = "window_left";
+macro_w_left: macro_w_left {
+    label = "macro_w_left";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;
@@ -48,8 +48,8 @@ window_left: window_left {
         , <&macro_release &kp LALT>
         ;
 };
-window_right: window_right {
-    label = "window_right";
+macro_w_right: macro_w_right {
+    label = "macro_w_right";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;
@@ -62,8 +62,8 @@ window_right: window_right {
         , <&macro_release &kp LALT>
         ;
 };
-window_max: window_max {
-    label = "window_max";
+macro_w_max: macro_w_max {
+    label = "macro_w_max";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     wait-ms = <2>;
