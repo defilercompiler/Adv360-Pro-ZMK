@@ -34,3 +34,19 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp P>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
+m_u: m_u {
+    label = "m_u";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    tap-ms = <2>;
+    bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_press &kp LCTRL>
+        , <&macro_tap &kp U>
+        , <&macro_release &kp LCTRL>
+        , <&macro_release &kp LSHFT>
+        , <&macro_tap &kp N0 &kp N1 &kp N6 &kp B>
+        , <&macro_tap &kp SPC>
+        ;
+};
