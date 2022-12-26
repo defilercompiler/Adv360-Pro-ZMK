@@ -44,6 +44,8 @@ window_left: window_left {
         = <&macro_press &kp LCTRL>
         , <&macro_press &kp LATL>
         , <&macro_tap &kp LEFT>
+        , <&macro_release &kp LCTRL>
+        , <&macro_release &kp LALT>
         ;
 };
 window_right: window_right {
@@ -56,6 +58,8 @@ window_right: window_right {
         = <&macro_press &kp LCTRL>
         , <&macro_press &kp LATL>
         , <&macro_tap &kp RIGHT>
+        , <&macro_release &kp LCTRL>
+        , <&macro_release &kp LALT>
         ;
 };
 window_max: window_max {
@@ -68,5 +72,7 @@ window_max: window_max {
         = <&macro_press &kp LCTRL>
         , <&macro_press &kp LATL>
         , <&macro_tap &kp ENTER>
+        , <&macro_release &kp LCTRL>
+        , <&macro_release &kp LALT>
         ;
 };
