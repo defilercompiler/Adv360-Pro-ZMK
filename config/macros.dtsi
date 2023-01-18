@@ -182,3 +182,40 @@ macro_w_down: macro_w_down {
         , <&macro_release &kp LALT>
         ;
 };
+macro_cmd_c: macro_cmd_c {
+    label = "macro_cmd_c";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    tap-ms = <2>;
+    bindings
+        = <&macro_press &kp LCMD>
+        , <&macro_tap &kp C>
+        , <&macro_release &kp LCMD>
+        ;
+};
+macro_cmd_v: macro_cmd_v {
+    label = "macro_cmd_v";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    tap-ms = <2>;
+    bindings
+        = <&macro_press &kp LCMD>
+        , <&macro_tap &kp V> 
+        , <&macro_release &kp LCMD>
+        ;
+};
+macro_cmd_a_c: macro_cmd_a_c {
+    label = "macro_cmd_a_c";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <2>;
+    tap-ms = <2>;
+    bindings
+        = <&macro_press &kp LCMD>
+        , <&macro_tap &kp A>
+        , <&macro_tap &kp C>
+        , <&macro_release &kp LCMD>
+        ;
+};
