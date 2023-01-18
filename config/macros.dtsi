@@ -154,7 +154,7 @@ macro_w_max: macro_w_max {
         , <&macro_release &kp LALT>
         ;
 };
-macro_w_right: macro_w_up {
+macro_w_up: macro_w_up {
     label = "macro_w_up";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
